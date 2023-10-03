@@ -8,7 +8,7 @@ class Bdd
     function __construct()
     {
 
-        $dsn = 'mysql:dbname=pizzajm;host=127.0.0.1:3308';
+        $dsn = 'mysql:dbname=pizzajm;host=127.0.0.1:3306';
         $dbUser = 'root';
         $dbPwd = '';
 
@@ -22,9 +22,9 @@ class Bdd
 
     function insertAvisClient($nom, $commentaire, $note)
     {
-        $sql ="Insert into avisclient (Av_nom, Av_commentaire, Av_note) VALUES (:nom, :commentaire, :note) ";
+        $sql = "Insert into avisclient (Av_nom, Av_commentaire, Av_note) VALUES (:nom, :commentaire, :note) ";
         $re = $this->bdd->prepare($sql);
-        $re->execute([":nom" => $nom, ":commentaire"=> $commentaire, ":note" => $note]);
+        $re->execute([":nom" => $nom, ":commentaire" => $commentaire, ":note" => $note]);
     }
 
 
@@ -58,16 +58,16 @@ class Bdd
         return $rq->fetchAll();
     }
 
-    function getVerifLogin($email, $mdp){
+    function getVerifLogin($email, $mdp)
+    {
 
-        $sql= "SELECT role_libelle
+        $sql = "SELECT role_libelle
                 FROM users
                 JOIN roles ON idroles= fk_role
                 WHERE email_user=:email and password_user=:mdp";
         $re = $this->bdd->prepare($sql);
-        $re->execute([":email" => $email, ":mdp"=>$mdp]);
+        $re->execute([":email" => $email, ":mdp" => $mdp]);
         return $re->fetch();
-
     }
 
     function getAvisClients()
@@ -78,10 +78,10 @@ class Bdd
         return $rq->fetchAll();
     }
 
-    function publishContactRequest($email, $message) {
+    function publishContactRequest($email, $message)
+    {
         $sql = "INSERT INTO contact (Co_email, Co_message) VALUES (:email, :message);";
         $rq = $this->bdd->prepare($sql);
         $rq->execute([":email" => $email, ":message" => $message]);
     }
-
 }

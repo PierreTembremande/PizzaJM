@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil</title>
+  <title>PizzasJM</title>
   <style>
     <?php include 'style/Accueil.css' ?><?php
-      foreach ($avis as $value) {
-        echo ".star-rating" . $value["Av_id"] . " {
+                                        foreach ($avis as $value) {
+                                          echo ".star-rating" . $value["Av_id"] . " {
             white-space: nowrap;
         }
         
@@ -25,8 +25,8 @@
           text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
           filter: invert(8%) sepia(100%) saturate(6480%) hue-rotate(246deg) brightness(102%) contrast(143%);
         }\n\n";
-      }
-    ?>
+                                        }
+                                        ?>
   </style>
   <link rel="icon" href="View/Pictures/logo.png" />
 </head>
@@ -39,14 +39,13 @@
   <nav>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" href="#pizza">Nos pizzas</a>
+        <a class="nav-link" href="#pizza-moment">Nos Pizzas</a>
       </li>
-      <li class="empty"></li>
       <li class="nav-item">
         <a class="nav-link" href="#clientRatesDiv">Avis</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </nav>
@@ -54,27 +53,28 @@
   <div class="presentation">
     <h2>Présentation de la pizzeria</h2>
     <img src="" alt="image du restaurant">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita dolores tenetur et impedit nisi sit, recusandae est libero doloribus quaerat debitis hic a sint, consequatur aperiam alias quia voluptatibus?</p>
+    <p>Bienvenue chez PizzasJM !</br></br>
+      Nous sommes fiers de vous accueillir dans notre univers de délices italiens, où chaque pizza raconte une histoire de passion, de tradition et de goût.</br> Notre histoire commence bien avant l'ouverture de nos portes, dans les ruelles pittoresques de l'Italie, où l'art de la pizza a vu le jour. Chez PizzasJM, nous avons fait de cette tradition notre héritage, et chaque jour, nous nous efforçons de vous offrir une expérience gastronomique inoubliable.</p>
   </div>
 
   <hr>
 
-  <div id= "pizzas" class="category">
-      <h2>Pizzas du moment</h2>
-      <ul class="list-pizza">
-          <li class="pizza">
-              <img src="../View/Pictures/pizza1.jpg" alt="la pizza 1">
-              <p>Pizza 1</p>
-          </li>
-          <li class="pizza">
-              <img src="../View/Pictures/pizza2.jpg" alt="la pizza 2">
-              <p>Pizza 2</p>
-          </li>
-          <li class="pizza">
-              <img src="../View/Pictures/pizza3.jpg" alt="la pizza 3">
-              <p>Pizza 3</p>
-          </li>
-      </ul>
+  <div id="pizzas" class="category">
+    <h2>Pizzas du moment</h2>
+    <ul class="list-pizza">
+      <li class="pizza">
+        <img src="View/Pictures/pizza1.jpg" alt="la pizza 1">
+        <p>Pizza 1</p>
+      </li>
+      <li class="pizza">
+        <img src="View/Pictures/pizza2.jpg" alt="la pizza 2">
+        <p>Pizza 2</p>
+      </li>
+      <li class="pizza">
+        <img src="View/Pictures/pizza3.jpg" alt="la pizza 3">
+        <p>Pizza 3</p>
+      </li>
+    </ul>
   </div>
 
   <div class="food">
@@ -83,21 +83,21 @@
     <hr>
     <h3 class="tomate">Base tomate</h3>
     <ul class="food-list">
-      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 1"></li>
-      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 2"></li>
-      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 3"></li>
-      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 4"></li>
-      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 5"></li>
+      <li class="food-item"><img src="View/Pictures/pizza1.jpg" alt="pizza tomate 1"></li>
+      <li class="food-item"><img src="View/Pictures/pizza1.jpg" alt="pizza tomate 2"></li>
+      <li class="food-item"><img src="View/Pictures/pizza1.jpg" alt="pizza tomate 3"></li>
+      <li class="food-item"><img src="View/Pictures/pizza1.jpg" alt="pizza tomate 4"></li>
+      <li class="food-item"><img src="View/Pictures/pizza1.jpg" alt="pizza tomate 5"></li>
     </ul>
 
     <hr>
     <h3 class="creme">Base crème fraiche</h3>
     <ul class="food-list">
-      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme 1"></li>
-      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme 2"></li>
-      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme 3"></li>
-      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme 4"></li>
-      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme "></li>
+      <li class="food-item"><img src="View/Pictures/pizza2.jpg" alt="pizza creme 1"></li>
+      <li class="food-item"><img src="View/Pictures/pizza2.jpg" alt="pizza creme 2"></li>
+      <li class="food-item"><img src="View/Pictures/pizza2.jpg" alt="pizza creme 3"></li>
+      <li class="food-item"><img src="View/Pictures/pizza2.jpg" alt="pizza creme 4"></li>
+      <li class="food-item"><img src="View/Pictures/pizza2.jpg" alt="pizza creme "></li>
     </ul>
   </div>
 
@@ -149,13 +149,13 @@
       ?>
     </div>
     <h3>Votre avis nous intéresse !</h3>
-      <?php
-      if (isset($sendAvisErr) && $sendAvisErr == true) {
-        echo "<p class='error'>" . $sendAvisErr . "</p>";
-      } else if (isset($sendAvisMessage) && !!$sendAvisMessage) {
-        echo "<p class='success'>" . $sendAvisMessage . "</p>";
-      }
-      ?>
+    <?php
+    if (isset($sendAvisErr) && $sendAvisErr == true) {
+      echo "<p class='error'>" . $sendAvisErr . "</p>";
+    } else if (isset($sendAvisMessage) && !!$sendAvisMessage) {
+      echo "<p class='success'>" . $sendAvisMessage . "</p>";
+    }
+    ?>
     <form id="rateForm" method="POST" action="#">
       <label for="nom">Votre nom :</label>
       <input id="rateFormNameInput" type="text" id="nom" name="nom" required>
@@ -173,17 +173,31 @@
     </form>
   </div>
 
-  <footer>
+  <h1 id="contact">Contact</h1>
+  <form method="post">
+    <label>Votre email</label>
+    <input type="email" name="email" required><br>
+    <label>Message</label>
+    <textarea name="message" required></textarea><br>
+    <input type="submit">
+  </form>
+  <?php
+
+  ?>
+
+  <div class="footer">
+
+    <footer>
       <div>
         <h1>Pizza JM</h1>
-        <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
+        <img class="logo" src="View/Pictures/logo.png" alt="Logo">
       </div>
       <p>
-          5 rue d'ENIGMA SCHOOL <br>
-          03.XX.XX.XX.XX <br>
-          Siret 61616515616132
+        5 rue d'ENIGMA SCHOOL <br>
+        03.XX.XX.XX.XX <br>
+        Siret 61616515616132
       </p>
-  </footer>
+    </footer>
 
 </body>
 

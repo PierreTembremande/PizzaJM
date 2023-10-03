@@ -27,13 +27,13 @@ hr {
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0;
     overflow: hidden;
     background-color: #b98203;
@@ -54,7 +54,29 @@ nav li a {
 
 /* Change the link color to #111 (black) on hover */
 nav li a:hover {
-    background-color: #111;
+    background-color: #333;
+}
+
+/* Style du footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style des liens dans le footer */
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Style des liens de conditions de règlement dans le footer */
+.footer-terms p {
+    margin: 10px 0;
 }
 
 nav .empty {
@@ -107,7 +129,7 @@ nav .empty {
     text-align: center;
 }
 
-.food-title{
+.food-title {
     background-color: black;
     color: white;
     padding: 10px;
@@ -177,7 +199,9 @@ nav .empty {
     align-items: center;
 }
 
-#rateFormNameInput, #rateFormNote, #rateFormCommentInput {
+#rateFormNameInput,
+#rateFormNote,
+#rateFormCommentInput {
     margin-bottom: 15px;
 }
 
