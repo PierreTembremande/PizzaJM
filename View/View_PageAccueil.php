@@ -39,11 +39,11 @@
   <nav>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Nos pizzas</a>
+        <a class="nav-link" href="#pizza">Nos pizzas</a>
       </li>
       <li class="empty"></li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Avis</a>
+        <a class="nav-link" href="#clientRatesDiv">Avis</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
@@ -59,7 +59,7 @@
 
   <hr>
 
-  <div class="category">
+  <div id= "pizzas" class="category">
       <h2>Pizzas du moment</h2>
       <ul class="list-pizza">
           <li class="pizza">
@@ -83,21 +83,21 @@
     <hr>
     <h3 class="tomate">Base tomate</h3>
     <ul class="food-list">
-      <li class="food-item"><img src="" alt="pizza tomate 1"></li>
-      <li class="food-item"><img src="" alt="pizza tomate 2"></li>
-      <li class="food-item"><img src="" alt="pizza tomate 3"></li>
-      <li class="food-item"><img src="" alt="pizza tomate 4"></li>
-      <li class="food-item"><img src="" alt="pizza tomate 5"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 1"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 2"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 3"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 4"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza1.jpg" alt="pizza tomate 5"></li>
     </ul>
 
     <hr>
     <h3 class="creme">Base crème fraiche</h3>
     <ul class="food-list">
-      <li class="food-item"><img src="" alt="pizza creme 1"></li>
-      <li class="food-item"><img src="" alt="pizza creme 2"></li>
-      <li class="food-item"><img src="" alt="pizza creme 3"></li>
-      <li class="food-item"><img src="" alt="pizza creme 4"></li>
-      <li class="food-item"><img src="" alt="pizza creme "></li>
+      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme 1"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme 2"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme 3"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme 4"></li>
+      <li class="food-item"><img src="../View/Pictures/pizza2.jpg" alt="pizza creme "></li>
     </ul>
   </div>
 
@@ -174,8 +174,10 @@
   </div>
 
   <footer>
-      <h1>Pizza JM</h1>
-      <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
+      <div>
+        <h1>Pizza JM</h1>
+        <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
+      </div>
       <p>
           5 rue d'ENIGMA SCHOOL <br>
           03.XX.XX.XX.XX <br>
