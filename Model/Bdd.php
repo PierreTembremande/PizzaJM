@@ -20,6 +20,13 @@ class Bdd
         }
     }
 
+    function insertAvisClient($nom, $commentaire, $note)
+    {
+        $sql ="Insert into avisclient (Av_nom, Av_commentaire, Av_note) VALUES (:nom, :commentaire, :note) "
+        $re = $this->bdd->prepare($sql);
+        $re->execute([":nom" => $nom, ":commentaire"=> $commentaire, ":note" => $note]);
+    }
+
 
     function getNomsEntrepots()
     {
