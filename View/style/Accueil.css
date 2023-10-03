@@ -206,6 +206,16 @@ nav li a:hover {
     right: 0;
 }
 
+.error {
+    color: red;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
 footer p {
     color: white;
     position: absolute;
