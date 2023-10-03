@@ -2,7 +2,7 @@
 
 require_once "../Model/Bdd.php";
 
-// $bdd= new Bdd();
+$bdd= new Bdd();
 
 // $entrepots=$bdd->getNomsEntrepots();
 
