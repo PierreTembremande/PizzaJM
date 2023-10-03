@@ -137,3 +137,9 @@ li a:hover {
     content: '>';
     right: 0;
 }
+
+footer p {
+    color: white;
+    position: absolute;
+    right: 10px;
+}

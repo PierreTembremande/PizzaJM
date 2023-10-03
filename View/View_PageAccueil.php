@@ -77,6 +77,17 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="div-logo">
+            <h1>Pizza JM</h1>
+            <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
+            <p>
+                5 rue d'ENIGMA SCHOOL <br>
+                03.XX.XX.XX.XX <br>
+                Siret 61616515616132
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
