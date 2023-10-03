@@ -4,11 +4,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .div-logo {
     height: 90px;
     width: 100%;
     text-align: center;
-    display: flex;
     background-color: #ef6000;
     margin-bottom: 25px;
     margin-top: 25px;
@@ -25,19 +28,19 @@ body {
     width: 100px;
 }
 
-ul {
+nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0px 0px 25px 0px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #b98203;
     display: flex;
     flex-direction: align;
     justify-content: center;
 }
 
 
-li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -46,7 +49,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+nav li a:hover {
     background-color: #111;
 }
 
@@ -79,10 +82,31 @@ li a:hover {
 
 }
 
-#prez {
-    height: 100px;
+.category {
+    background-color: #f0f0f0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.category .list-pizza {
+    background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category .list-pizza .pizza img {
+    height: 200px;
+    width: 200px;
+}
+
+.category .list-pizza .pizza p {
     text-align: center;
-    padding-top: 100px;
 }
 
 #clientRatesDiv {

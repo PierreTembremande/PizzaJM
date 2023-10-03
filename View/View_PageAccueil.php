@@ -32,24 +32,26 @@
 </head>
 
 <body>
-  <div class="div-logo"><img class="logo" src="View/Pictures/logo.png" alt="Logo"></div>
+  <div class="div-logo">
+    <img class="logo" src="View/Pictures/logo.png" alt="Logo">
+  </div>
 
-
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Notre pizzeria</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Nos pizzas</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Avis</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
-    </li>
-  </ul>
-
+  <nav>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Notre pizzeria</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nos pizzas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Avis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
   <div class="background">
     <img class="img-description" src="View/Pictures/fond pizza.png" alt="">
@@ -59,15 +61,24 @@
     </div>
   </div>
 
+  <div class="category">
+      <h2>Pizzas du moment</h2>
+      <ul class="list-pizza">
+          <li class="pizza">
+              <img src="../View/Pictures/pizza1.jpg" alt="">
+              <p>Pizza 1</p>
+          </li>
+          <li class="pizza">
+              <img src="../View/Pictures/pizza2.jpg" alt="">
+              <p>Pizza 2</p>
+          </li>
+          <li class="pizza">
+              <img src="../View/Pictures/pizza3.jpg" alt="">
+              <p>Pizza 3</p>
+          </li>
+      </ul>
+  </div>
 
-
-  <footer>
-    <ul class="footer-list">
-      <li class="footer-item">An item</li>
-      <li class="footer-item">A second item</li>
-      <li class="footer-item">A third item</li>
-    </ul>
-  </footer>
   <div id="clientRatesDiv">
     <h2>Avis clients</h2>
     <p>Voici ce que les <?php echo count($avis); ?> avis de nos clients pensent de nous :</p>
@@ -114,6 +125,19 @@
       ?>
     </div>
   </div>
+
+  <footer>
+        <div class="div-logo">
+            <h1>Pizza JM</h1>
+            <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
+            <p>
+                5 rue d'ENIGMA SCHOOL <br>
+                03.XX.XX.XX.XX <br>
+                Siret 61616515616132
+            </p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
