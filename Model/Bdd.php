@@ -22,7 +22,7 @@ class Bdd
 
     function insertAvisClient($nom, $commentaire, $note)
     {
-        $sql ="Insert into avisclient (Av_nom, Av_commentaire, Av_note) VALUES (:nom, :commentaire, :note) "
+        $sql ="Insert into avisclient (Av_nom, Av_commentaire, Av_note) VALUES (:nom, :commentaire, :note) ";
         $re = $this->bdd->prepare($sql);
         $re->execute([":nom" => $nom, ":commentaire"=> $commentaire, ":note" => $note]);
     }
@@ -68,6 +68,13 @@ class Bdd
         $re->execute([":email" => $email, ":mdp"=>$mdp]);
         return $re->fetch();
 
+    }
+
+    function getAvisClients() {
+            $sql = "SELECT * FROM avisclient";
+            $re = $this->bdd->prepare($sql);
+            $re->execute();
+            return $re->fetchAll();
     }
 
 }
