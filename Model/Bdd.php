@@ -8,9 +8,9 @@ class Bdd
     function __construct()
     {
 
-        $dsn = 'mysql:dbname=pizzajm;host=127.0.0.1:3308';
+        $dsn = 'mysql:dbname=pizzajm;host=127.0.0.1:8889';
         $dbUser = 'root';
-        $dbPwd = '';
+        $dbPwd = 'root';
 
         try {
             $this->bdd = new PDO($dsn, $dbUser, $dbPwd);
@@ -70,11 +70,12 @@ class Bdd
 
     }
 
-    function getAvisClients() {
-            $sql = "SELECT * FROM avisclient";
-            $re = $this->bdd->prepare($sql);
-            $re->execute();
-            return $re->fetchAll();
+    function getAvisClients()
+    {
+        $sql = "SELECT * FROM avisclient;";
+        $rq = $this->bdd->prepare($sql);
+        $rq->execute();
+        return $rq->fetchAll();
     }
 
 }
