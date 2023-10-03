@@ -24,5 +24,3 @@ if (isset($_POST['commentaire'])) {
 $avis=$bdd->getAvisClients();
 
 require_once(dirname(__DIR__) . "/View/View_PageAccueil.php");
-
-// $entrepots=$bdd->getNomsEntrepots();
