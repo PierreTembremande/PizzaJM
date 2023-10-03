@@ -1,3 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.div-logo {
+    height: 90px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
 #clientRatesDiv {
     background-color: #f0f0f0;
     padding: 20px;
@@ -21,18 +63,20 @@
 }
 
 .star-rating {
-	white-space: nowrap;
+    white-space: nowrap;
 }
+
 .star-rating [type="radio"] {
-	appearance: none;
+    appearance: none;
 }
+
 .star-rating i {
-	font-size: 1.2em;
-	transition: 0.3s;
+    font-size: 1.2em;
+    transition: 0.3s;
 }
 
 .star-rating label:has(~ :checked) i svg {
-	text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
+    text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
     filter: invert(8%) sepia(100%) saturate(6480%) hue-rotate(246deg) brightness(102%) contrast(143%);
 }
 
@@ -61,19 +105,19 @@
 
 .prev:before,
 .next:before {
-  color: #fff;
-  font-size: 100px;
-  position: absolute;
-  top: 35%;
-  cursor: pointer;
+    color: #fff;
+    font-size: 100px;
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
 }
 
 .prev:before {
-  content: '<';
-  left: 0;
+    content: '<';
+    left: 0;
 }
 
 .next:before {
-  content: '>';
-  right: 0;
+    content: '>';
+    right: 0;
 }
