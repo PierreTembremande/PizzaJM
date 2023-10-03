@@ -176,14 +176,16 @@
     </form>
   </div>
 
-  <h1 id="contact">Contact</h1>
-  <form method="post">
-    <label>Votre email</label>
-    <input type="email" name="email" required><br>
-    <label>Message</label>
-    <textarea name="message" required></textarea><br>
-    <input type="submit">
-  </form>
+  <div id="contactDiv">
+    <h1 id="contact">Contact</h1>
+    <form id="contactForm" method="post">
+      <label>Votre email</label>
+      <input id="contactEmailInput" type="email" name="email" required>
+      <label>Message</label>
+      <textarea id="contactMessageInput" name="message" required></textarea>
+      <input type="submit">
+    </form>
+  </div>
   <?php
 
   ?>
