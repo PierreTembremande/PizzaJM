@@ -126,9 +126,9 @@
     </div>
     <h3>Votre avis nous intéresse !</h3>
       <?php
-      if ($sendAvisErr) {
+      if (isset($sendAvisErr) && $sendAvisErr == true) {
         echo "<p class='error'>" . $sendAvisErr . "</p>";
-      } else if ($sendAvisMessage) {
+      } else if (isset($sendAvisMessage) && !!$sendAvisMessage) {
         echo "<p class='success'>" . $sendAvisMessage . "</p>";
       }
       ?>
