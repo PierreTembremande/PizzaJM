@@ -29,33 +29,6 @@
                                         ?>
   </style>
   <link rel="icon" href="View/Pictures/logo.png" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil</title>
-  <style>
-    <?php include 'style/Accueil.css' ?><?php
-                                        foreach ($avis as $value) {
-                                          echo ".star-rating" . $value["Av_id"] . " {
-            white-space: nowrap;
-        }
-        
-        .star-rating" . $value["Av_id"] . " [type='radio'] {
-            appearance: none;
-        }
-        
-        .star-rating" . $value["Av_id"] . " i {
-            font-size: 1.2em;
-            transition: 0.3s;
-        }
-        
-        .star-rating" . $value["Av_id"] . " label:has(~ :checked) i svg {
-          text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
-          filter: invert(8%) sepia(100%) saturate(6480%) hue-rotate(246deg) brightness(102%) contrast(143%);
-        }\n\n";
-                                        }
-                                        ?>
-  </style>
-  <link rel="icon" href="View/Pictures/logo.png" />
 </head>
 
 <body>
