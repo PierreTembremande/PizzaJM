@@ -6,11 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil</title>
   <style>
-    <?php include 'style/Accueil.css' ?>
-
-    <?php
-      foreach ($avis as $value) {
-        echo ".star-rating" . $value["Av_id"] . " {
+    <?php include 'style/Accueil.css' ?><?php
+                                        foreach ($avis as $value) {
+                                          echo ".star-rating" . $value["Av_id"] . " {
             white-space: nowrap;
         }
         
@@ -27,19 +25,17 @@
           text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
           filter: invert(8%) sepia(100%) saturate(6480%) hue-rotate(246deg) brightness(102%) contrast(143%);
         }\n\n";
-      }
-    ?>
+                                        }
+                                        ?>
   </style>
   <link rel="icon" href="View/Pictures/logo.png" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil</title>
   <style>
-    <?php include 'style/Accueil.css' ?>
-
-    <?php
-      foreach ($avis as $value) {
-        echo ".star-rating" . $value["Av_id"] . " {
+    <?php include 'style/Accueil.css' ?><?php
+                                        foreach ($avis as $value) {
+                                          echo ".star-rating" . $value["Av_id"] . " {
             white-space: nowrap;
         }
         
@@ -56,17 +52,13 @@
           text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
           filter: invert(8%) sepia(100%) saturate(6480%) hue-rotate(246deg) brightness(102%) contrast(143%);
         }\n\n";
-      }
-    ?>
+                                        }
+                                        ?>
   </style>
   <link rel="icon" href="View/Pictures/logo.png" />
 </head>
 
-  <body>
-    <div class="div-logo">
-        <h1>Pizza JM</h1>
-        <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
-    </div>
+<body>
   <div class="div-logo"><img class="logo" src="View/Pictures/logo.png" alt="Logo"></div>
 
 
@@ -84,25 +76,17 @@
       <a class="nav-link" href="#">Contact</a>
     </li>
   </ul>
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Notre pizzeria</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Nos pizzas</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Avis</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
-    </li>
-  </ul>
-
-  <h1>Accueil</h1>
 
 
-  <main>contenu du site</main>
+  <div class="background">
+    <img class="img-description" src="View/Pictures/fond pizza.png" alt="">
+    <div class="div-txt-description">
+      <main>Bienvenue chez PizzaJM !</br></br>
+        Nous sommes fiers de vous accueillir dans notre univers de délices italiens, où chaque pizza raconte une histoire de passion, de tradition et de goût.</br> Notre histoire commence bien avant l'ouverture de nos portes, dans les ruelles pittoresques de l'Italie, où l'art de la pizza a vu le jour. Chez PizzaJM, nous avons fait de cette tradition notre héritage, et chaque jour, nous nous efforçons de vous offrir une expérience gastronomique inoubliable.</main>
+    </div>
+  </div>
+
+
 
   <footer>
     <ul class="footer-list">
