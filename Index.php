@@ -1,3 +1,3 @@
 <?php
-header('Location: ./Controller/Controller_PageAccueil');
+    require_once(dirname(__FILE__) . '\Controller\Controller_PageAccueil.php');
 ?>
