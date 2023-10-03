@@ -8,7 +8,7 @@ class Bdd
     function __construct()
     {
 
-        $dsn = 'mysql:dbname=pizzajm;host=127.0.0.1:3306';
+        $dsn = 'mysql:dbname=pizzajm;host=127.0.0.1:3308';
         $dbUser = 'root';
         $dbPwd = '';
 
