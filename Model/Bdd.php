@@ -78,4 +78,10 @@ class Bdd
         return $rq->fetchAll();
     }
 
+    function publishContactRequest($email, $message) {
+        $sql = "INSERT INTO contact (Co_email, Co_message) VALUES (:email, :message);";
+        $rq = $this->bdd->prepare($sql);
+        $rq->execute([":email" => $email, ":message" => $message]);
+    }
+
 }
