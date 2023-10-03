@@ -8,6 +8,16 @@ body {
     height: 90px;
     width: 100%;
     text-align: center;
+    display: flex;
+    background-color: #ef6000;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.div-logo h1 {
+    color: white;
+    padding-right: 50px;
+    padding-left: 10px;
 }
 
 .logo {
@@ -20,7 +30,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ac7d07ea;
 }
 
 li {
@@ -38,6 +48,12 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+#prez {
+    height: 100px;
+    text-align: center;
+    padding-top: 100px;
 }
 
 #clientRatesDiv {

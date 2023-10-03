@@ -8,7 +8,7 @@ class Bdd
     function __construct()
     {
 
-        $dsn = 'mysql:dbname=pizzajm;host=127.0.0.1:3306';
+        $dsn = 'mysql:dbname=pizzajm;host=127.0.0.1:3308';
         $dbUser = 'root';
         $dbPwd = '';
 
@@ -18,6 +18,13 @@ class Bdd
 
             echo $e->getMessage();
         }
+    }
+
+    function insertAvisClient($nom, $commentaire, $note)
+    {
+        $sql ="Insert into avisclient (Av_nom, Av_commentaire, Av_note) VALUES (:nom, :commentaire, :note) "
+        $re = $this->bdd->prepare($sql);
+        $re->execute([":nom" => $nom, ":commentaire"=> $commentaire, ":note" => $note]);
     }
 
 

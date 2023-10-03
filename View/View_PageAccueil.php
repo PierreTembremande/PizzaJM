@@ -31,12 +31,59 @@
     ?>
   </style>
   <link rel="icon" href="View/Pictures/logo.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <style>
+    <?php include 'style/Accueil.css' ?>
+
+    <?php
+      foreach ($avis as $value) {
+        echo ".star-rating" . $value["Av_id"] . " {
+            white-space: nowrap;
+        }
+        
+        .star-rating" . $value["Av_id"] . " [type='radio'] {
+            appearance: none;
+        }
+        
+        .star-rating" . $value["Av_id"] . " i {
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        
+        .star-rating" . $value["Av_id"] . " label:has(~ :checked) i svg {
+          text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
+          filter: invert(8%) sepia(100%) saturate(6480%) hue-rotate(246deg) brightness(102%) contrast(143%);
+        }\n\n";
+      }
+    ?>
+  </style>
+  <link rel="icon" href="View/Pictures/logo.png" />
 </head>
 
 <body>
+    <div class="div-logo">
+        <h1>Pizza JM</h1>
+        <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
+    </div>
   <div class="div-logo"><img class="logo" src="View/Pictures/logo.png" alt="Logo"></div>
 
 
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Notre pizzeria</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Nos pizzas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Avis</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
   <ul class="nav">
     <li class="nav-item">
       <a class="nav-link active" href="#">Notre pizzeria</a>
