@@ -120,10 +120,9 @@ nav .empty {
     padding-top: 100px;
 }
 
-.food-item {
-    height: 100px;
-    width: 100px;
-    background-color: grey;
+.food-item img {
+    height: 125px;
+    width: 125px;
 }
 
 .tomate {
@@ -258,4 +257,9 @@ footer {
     color: white;
     justify-content: space-between;
     padding: 0px 15px 0px 15px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
 }
