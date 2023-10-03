@@ -54,10 +54,10 @@
   <div class="presentation">
     <div class="block-pres">
       <h2>Présentation de la pizzeria</h2>
-      <img src="../View/Pictures/pizza3.jpg" alt="image du restaurant">
+      <img src="View/Pictures/pizza3.jpg" alt="image du restaurant">
     </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita dolores tenetur et impedit nisi sit, recusandae est libero doloribus quaerat debitis hic a sint, consequatur aperiam alias quia voluptatibus?
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa autem facere corporis voluptates officia possimus quibusdam molestias exercitationem aperiam ut tenetur, dolorem sequi. Corporis veritatis optio eveniet, deleniti aliquid reprehenderit.
+    <p>Bienvenue chez PizzasJM !</br></br>
+      Nous sommes fiers de vous accueillir dans notre univers de délices italiens, où chaque pizza raconte une histoire de passion, de tradition et de goût.</br> Notre histoire commence bien avant l'ouverture de nos portes, dans les ruelles pittoresques de l'Italie, où l'art de la pizza a vu le jour. Chez PizzasJM, nous avons fait de cette tradition notre héritage, et chaque jour, nous nous efforçons de vous offrir une expérience gastronomique inoubliable.
     </p>
   </div>
 
