@@ -2,19 +2,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 ul {
     list-style-type: none;
 }
 
+hr {
+    width: 90%;
+}
+
 .div-logo {
-    height: 90px;
+    height: 150px;
     width: 100%;
     text-align: center;
     background-color: #ef6000;
-    margin-bottom: 25px;
-    margin-top: 25px;
 }
 
 .div-logo h1 {
@@ -46,6 +49,7 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -53,60 +57,92 @@ nav li a:hover {
     background-color: #111;
 }
 
-.div-txt-description {
-    right: 50px;
-    display: flex;
-    width: 45%;
-    font-size: 25px;
+nav .empty {
+    flex-grow: 1;
+}
+
+.presentation {
+    height: 300px;
     color: white;
-    z-index: 2;
-    position: absolute;
-    top: 45%;
-    line-height: 33px;
-}
-
-.img-description {
-    height: auto;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    z-index: 1;
-}
-
-.background {
-    background-size: cover;
-    background-position: left;
-    z-index: 1;
-    height: 90vh;
-
+    background: linear-gradient(#ff0044, #ff8800);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px;
+    padding: 15px;
 }
 
 .category {
-    background-color: #f0f0f0;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    height: 350px;
+    margin: 15px 15px 25px 15px;
+    padding: 0px 15px 0px 15px;
+    height: 360px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
 
+.category h2 {
+    padding-top: 30px;
+}
+
 .category .list-pizza {
-    background-color: #f0f0f0;
     width: 100%;
+    background: linear-gradient(#ff0044, #ff8800);
     display: flex;
     justify-content: space-evenly;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 15px;
 }
 
 .category .list-pizza .pizza img {
     height: 200px;
     width: 200px;
+    border-radius: 50%;
 }
 
 .category .list-pizza .pizza p {
     text-align: center;
+}
+
+.food-title{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.food-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.food-item {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+}
+
+.tomate {
+    padding: 10px 25px 10px 25px;
+    position: absolute;
+    left: 0;
+    margin-left: 40px;
+    background-color: rgb(252, 71, 71);
+    color: white;
+}
+
+
+.creme {
+    padding: 10px 25px 10px 25px;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    background-color: rgb(46, 46, 46);
+    color: white;
 }
 
 #clientRatesDiv {
@@ -191,8 +227,10 @@ nav li a:hover {
     right: 0;
 }
 
-footer p {
+footer {
+    display: flex;
+    background-color: #ef6000;
     color: white;
-    position: absolute;
-    right: 10px;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
 }

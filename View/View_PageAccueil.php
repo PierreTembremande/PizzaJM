@@ -39,11 +39,9 @@
   <nav>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Notre pizzeria</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#">Nos pizzas</a>
       </li>
+      <li class="empty"></li>
       <li class="nav-item">
         <a class="nav-link" href="#">Avis</a>
       </li>
@@ -53,31 +51,57 @@
     </ul>
   </nav>
 
-  <div class="background">
-    <img class="img-description" src="View/Pictures/fond pizza.png" alt="">
-    <div class="div-txt-description">
-      <main>Bienvenue chez PizzaJM !</br></br>
-        Nous sommes fiers de vous accueillir dans notre univers de délices italiens, où chaque pizza raconte une histoire de passion, de tradition et de goût.</br> Notre histoire commence bien avant l'ouverture de nos portes, dans les ruelles pittoresques de l'Italie, où l'art de la pizza a vu le jour. Chez PizzaJM, nous avons fait de cette tradition notre héritage, et chaque jour, nous nous efforçons de vous offrir une expérience gastronomique inoubliable.</main>
-    </div>
+  <div class="presentation">
+    <h2>Présentation de la pizzeria</h2>
+    <img src="" alt="image du restaurant">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita dolores tenetur et impedit nisi sit, recusandae est libero doloribus quaerat debitis hic a sint, consequatur aperiam alias quia voluptatibus?</p>
   </div>
+
+  <hr>
 
   <div class="category">
       <h2>Pizzas du moment</h2>
       <ul class="list-pizza">
           <li class="pizza">
-              <img src="../View/Pictures/pizza1.jpg" alt="">
+              <img src="../View/Pictures/pizza1.jpg" alt="la pizza 1">
               <p>Pizza 1</p>
           </li>
           <li class="pizza">
-              <img src="../View/Pictures/pizza2.jpg" alt="">
+              <img src="../View/Pictures/pizza2.jpg" alt="la pizza 2">
               <p>Pizza 2</p>
           </li>
           <li class="pizza">
-              <img src="../View/Pictures/pizza3.jpg" alt="">
+              <img src="../View/Pictures/pizza3.jpg" alt="la pizza 3">
               <p>Pizza 3</p>
           </li>
       </ul>
   </div>
+
+  <div class="food">
+    <h2 class="food-title">Nos Pizzas</h2>
+
+    <hr>
+    <h3 class="tomate">Base tomate</h3>
+    <ul class="food-list">
+      <li class="food-item"><img src="" alt="pizza tomate 1"></li>
+      <li class="food-item"><img src="" alt="pizza tomate 2"></li>
+      <li class="food-item"><img src="" alt="pizza tomate 3"></li>
+      <li class="food-item"><img src="" alt="pizza tomate 4"></li>
+      <li class="food-item"><img src="" alt="pizza tomate 5"></li>
+    </ul>
+
+    <hr>
+    <h3 class="creme">Base crème fraiche</h3>
+    <ul class="food-list">
+      <li class="food-item"><img src="" alt="pizza creme 1"></li>
+      <li class="food-item"><img src="" alt="pizza creme 2"></li>
+      <li class="food-item"><img src="" alt="pizza creme 3"></li>
+      <li class="food-item"><img src="" alt="pizza creme 4"></li>
+      <li class="food-item"><img src="" alt="pizza creme "></li>
+    </ul>
+  </div>
+
+  <hr>
 
   <div id="clientRatesDiv">
     <h2>Avis clients</h2>
@@ -127,16 +151,14 @@
   </div>
 
   <footer>
-        <div class="div-logo">
-            <h1>Pizza JM</h1>
-            <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
-            <p>
-                5 rue d'ENIGMA SCHOOL <br>
-                03.XX.XX.XX.XX <br>
-                Siret 61616515616132
-            </p>
-        </div>
-    </footer>
+      <h1>Pizza JM</h1>
+      <img class="logo" src="../View/Pictures/logo.png" alt="Logo">
+      <p>
+          5 rue d'ENIGMA SCHOOL <br>
+          03.XX.XX.XX.XX <br>
+          Siret 61616515616132
+      </p>
+  </footer>
 
 </body>
 
