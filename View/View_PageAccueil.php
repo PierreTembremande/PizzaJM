@@ -39,8 +39,9 @@
   <nav>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" href="#pizza-moment">Nos Pizzas</a>
+        <a class="nav-link" href="#pizzas">Nos Pizzas</a>
       </li>
+      <li class="hidden-item"></li>
       <li class="nav-item">
         <a class="nav-link" href="#clientRatesDiv">Avis</a>
       </li>
