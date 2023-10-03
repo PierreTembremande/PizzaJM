@@ -2,8 +2,8 @@
 
 require_once "../Model/Bdd.php";
 
-$bdd= new Bdd();
+// $bdd= new Bdd();
 
 // $entrepots=$bdd->getNomsEntrepots();
 
-require "../View/View_Accueil";
+require "../View/View_PageAccueil.php";
