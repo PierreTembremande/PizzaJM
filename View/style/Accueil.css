@@ -73,6 +73,23 @@ nav .empty {
     padding: 15px;
 }
 
+.block-pres {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-pres h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block-pres img {
+    height: 150px;
+    width: 150px;
+    border-radius: 30px;
+}
+
 .category {
     margin: 15px 15px 25px 15px;
     padding: 0px 15px 0px 15px;
